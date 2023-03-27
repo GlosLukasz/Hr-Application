@@ -1,0 +1,14 @@
+spring:
+  h2.console:
+    enabled: true
+    path: '/console'
+  datasource:
+    url: 'jdbc:h2:file:./HrTest'
+  jpa:
+    hibernate:
+      ddl-auto: validate
+keycloak:
+  auth-server-url: 'http://localhost:8180'
+  realm: 'HrApp'
+  resource: 'hr-application-client'
+  public-client: true
